@@ -1,0 +1,105 @@
+/*убираем все отступы и границы*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/*меняем подсчет ширины блока*/
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/*убираем линии обводки у некоторых браузеров*/
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+/* делаем следующие теги блочными */
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+/* уравниваем поведением шрифтов и элементов для разных браузеров */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* назначаем тегам формы наследование шрифтов */
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/* убираем особенности некоторых элементов в разных браузерах */
+
+/* убирает крестик в инпутах в ие */
+input::-ms-clear {
+  display: none;
+}
+
+
+/* меняет курсор на кликабельную руку */
+button {
+  cursor: pointer;
+}
+
+/* убираем отступы и границы кнопки */
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* убираем украшение ссылок */
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+/* убираем стили списков */
+ul li {
+  list-style: none;
+}
+
+/* это, видимо, выравнивает картину по верху */
+img {
+  vertical-align: top;
+}
+
+/* обнуляем все заголовки */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
